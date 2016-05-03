@@ -1,0 +1,5 @@
+FROM svallero/mesos:v0
+MAINTAINER Sara <svallero@to.infn.it>
+
+CMD ["--no-systemd_enable_support"]
+ENTRYPOINT ["mesos-slave"]

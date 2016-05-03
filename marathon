@@ -1,0 +1,8 @@
+FROM svallero/mesos:v0
+
+MAINTAINER Sara <svallero@to.infn.it>
+
+RUN yum -y install marathon  
+    
+CMD ["--no-logger"]
+ENTRYPOINT ["marathon"] 

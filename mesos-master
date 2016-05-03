@@ -1,0 +1,5 @@
+FROM svallero/mesos:v0
+MAINTAINER Sara <svallero@to.infn.it>
+
+CMD ["--registry=in_memory"]
+ENTRYPOINT ["mesos-master"]
